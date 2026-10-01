@@ -20,4 +20,4 @@ try:
     ans = num1*num2
     print(ans)
 except:
-    print("please enter numbers only")
+    print("That is not a number")
