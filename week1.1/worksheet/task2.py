@@ -13,7 +13,7 @@ try:
     num1=int(input("Enter your monthly saving amount:£ "))
     num2=num1*12
     print(f"You will save £{num2} every year.")
-    num3=num2*1.008
+    num3=f"{num2*1.008:.2f}"
     print(f"With interest, you will save £{num3} every year.")
 except:
     print("Invalid amount")
