@@ -5,9 +5,9 @@ if not grade.isdecimal():
     sys.exit("Error: Grade must be an integer between 0 and 100")
 result = int(grade)
 if result<=39:
-    print(f"{result} is a Pail")
+    print(f"{result} is a Fail")
 elif 40<=result<=69:
-    print(f"{result} is a pass")
+    print(f"{result} is a Pass")
 elif 70<= result <= 100:
     print(f"{result} is a Distinction")
 else:
