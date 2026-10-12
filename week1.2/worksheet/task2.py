@@ -3,8 +3,7 @@ import sys
 from util import read_numbers
 numbers = read_numbers()
 if not numbers:
-    print("Error: no numbers provided")
-    sys.exit()
+    sys.exit("Error: no numbers provided")
 minimum = min(numbers)
 maximum = max(numbers)
 mean = sum(numbers) / len(numbers) # the statistic mean function not used here because of the restrictio on the worksheet
