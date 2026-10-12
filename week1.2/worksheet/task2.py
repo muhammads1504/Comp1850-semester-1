@@ -20,7 +20,7 @@ else:
     middle_number_2 = in_order[(middle_number)]
     median = (middle_number_1+middle_number_2)/2
     
-print(f"Minimum is {minimum:.1f}")
-print(f"Maximum is {maximum:.1f}")
-print(f"Mean is {mean:.1f}")
-print(f"Median is {median:.1f}")
+print(f"Minimum = {minimum:.1f}")
+print(f"Maximum = {maximum:.1f}")
+print(f"Mean = {mean:.1f}")
+print(f"Median = {median:.1f}")
