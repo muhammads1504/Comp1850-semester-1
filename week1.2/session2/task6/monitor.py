@@ -21,5 +21,6 @@ if operating_status==1:
     if temp>80 or pressure>100:
         print("the system is running in unsafe conditions")
     elif temp<80 or pressure<100:
-        p
-        
+        print("the system is running under safe conditions")
+else:
+     print("the machine is off and no immediate action is needed")       
