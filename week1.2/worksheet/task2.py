@@ -9,10 +9,19 @@ minimum = min(numbers)
 maximum = max(numbers)
 mean = sum(numbers) / len(numbers) # the statistic mean function not used here because of the restrictio on the worksheet
 
-in_order = sort.numbers() # this will sor the numebr is assending order
+in_order = sorted(numbers) # this will sor the numebr is assending order
 # after sorting we need to se how many numbers there are 
 length_of_sorted = len(in_order)
-#now wee need to find the middle number
-middle_number = length_of_sorted/2
-if length_of_sorted/2 == 1:
-     median = numbers[middle_number]
+#now we need to find the middle number
+middle_number = length_of_sorted//2
+if length_of_sorted%2 != 0:
+     median = in_order[middle_number]
+else:
+    middle_number_1 = in_order[middle_number-1]
+    middle_number_2 = in_order[(middle_number)]
+    median = (middle_number_1+middle_number_2)/2
+    
+print(f"Minimum is {minimum}")
+print(f"Maximum is {maximum}")
+print(f"Mean is {mean}")
+print(f"Median is {median}")
