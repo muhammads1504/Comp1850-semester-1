@@ -18,7 +18,7 @@ if length_of_sorted%2 == 1:
 else:
     middle_number_1 = (in_order[middle_number])
     middle_number_2 = (in_order[middle_number-1])
-    median = (middle_number_1+middle_number_2)/2
+    median = ((middle_number_1+middle_number_2)/2)
     
 print(f"Minimum = {minimum:.1f}")
 print(f"Maximum = {maximum:.1f}")
