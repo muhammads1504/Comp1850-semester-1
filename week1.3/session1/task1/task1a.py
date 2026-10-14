@@ -3,10 +3,19 @@
 i = 0
 
 while i < 21:
-	print(i)
- i=i+1
+    print(i)
+    i += 1
     
- 
+i = 0
+
+while i < 21:
+    if i % 4 == 0 and i != 0:
+	    print(f"{i} is a mutiple of 4")
+    else:
+        print(i)
+    i += 1
+
+
     
 
 

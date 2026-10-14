@@ -8,6 +8,11 @@ while True:
     print(f"You said: {user_input}")
     if user_input == "quit":
         break
+user_input = input("Say something: ")
+while user_input != "quit":
+    print(f"You said: {user_input}")
+    
+print(f"You said: {user_input}")
 
 
 # As written the program has an infinite loop.
