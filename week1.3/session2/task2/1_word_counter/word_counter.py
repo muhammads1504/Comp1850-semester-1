@@ -4,7 +4,12 @@
 # You can use any of the .txt files to test this - or even make your own.
 
 # open and read the file
-
+with open("/workspaces/Comp1850-semester-1/week1.3/session2/task2/1_word_counter/story.txt", "r") as infile:
+    for line in infile:
+        print(line)
+    infile = [line.strip().split(",") for line in line]
+    lenght = len(line)
+    print(lenght)
 # calculate the number of words
 # hint: you could use .split() to break up by spaces
 # hint: watch out for empty lines that might give you empty strings
