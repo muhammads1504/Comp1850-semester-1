@@ -1,5 +1,13 @@
 # Week 1.3, Session 2: Write User Information to a File
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+favorite_colour = input("Enter your favorite colour: ")
 
+with open('user_info.txt', 'w') as file:
+    file.write(f"Name: {name}\n")
+    file.write(f"Age: {age}\n")
+    file.write(f"Favorite Colour: {favorite_colour}\n")
+# the n at the end of each line is for a new line, so that each piece of information is on a separate line in the file.
 
 # Prompt the user for their name, age, and favorite colour.
 
