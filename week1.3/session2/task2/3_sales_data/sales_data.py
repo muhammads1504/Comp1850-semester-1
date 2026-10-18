@@ -1,17 +1,20 @@
 # Week 1.3, Session 2: Sales Data Statistics
 
 # We want to analyse a set of sales data in sales.csv
-with open("sales.csv" , "r") as file:
+import csv
+
+units_sold = []
+
+with open("/workspaces/Comp1850-semester-1/week1.3/session2/task2/3_sales_data/sales.csv", "r") as file:
     for line in file:
         print(line)
-    largest_sales = max(Units_Sold)
-    sum = 0
-    for Unit_Sold in file:
-        sum += sum
-    all_sold = len(Unit_Sold)
-    avrage = sum/all_sold
-    print(largest_sales)
-    print(average)
+    for row in csv.reader(file):
+        if row:
+            units_sold.append(int(row[3]))
+largest_sale_day = max(units_sold)
+average_sale_amount = sum(units_sold)/len(units_sold)
+print(f"Largest_sale_day = {largest_sale_day}")
+print(f"Average_sale_amount = {average_sale_amount:.2f}")
 # Open the file and read the data
 # find the:
 #   - largest sale day (highest sale amount)

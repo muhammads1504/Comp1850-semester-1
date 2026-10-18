@@ -7,15 +7,14 @@
 
 file_to_count = input("Enter the file you want to be counted: ")
 with open(f"/workspaces/Comp1850-semester-1/week1.3/session2/task2/1_word_counter/{file_to_count}","r") as infile:
-    for line in infile:
-        print(line)
-total_words = 0
-infile = [line.strip().split(",") for line in line]
+    
+    infile = [line.strip().split() for line in infile]
+    total_words = 0
  # this is a list comprehension that will strip the line of any whitespace and split it into a list of words using the comma as a delimiter
     # the strip function removes any whitespace from the start and end of the string, 
     #  the split function splits the string into a list of words, using the comma as a delimiter # so we can count the number of words in the list by using the len() function
-for line in infile:
-    total_words += len(line) # this will add the number of words in each line to the total word count
+    for line in infile:
+        total_words += len(line) # this will add the number of words in each line to the total word count
 print(total_words)
 # calculate the number of words
 # hint: you could use .split() to break up by spaces
