@@ -12,7 +12,8 @@ with open("/workspaces/Comp1850-semester-1/week1.3/session2/task3/2_averag_grade
         science = int(row[3])
         history = int(row[4])
         average = (maths + science + history)/3
-        
+# will come back to this
+
 with open("/workspaces/Comp1850-semester-1/week1.3/session2/task3/2_averag_grade/report.txt", "w") as outfile:
     writer = csv.writer(outfile)
     writer.writerow([f"{name} = {average}"])
