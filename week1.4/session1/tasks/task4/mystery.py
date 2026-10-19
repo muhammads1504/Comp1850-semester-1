@@ -11,6 +11,11 @@
 # function implementation
 
 def mystery_func(string):
+    """
+    the user will enter a string and the programmer looks at ho many upper casse letter it contains and the how many lower case letter it contains
+    the programme will return that as a list on how many letter it cantained in upper and lower
+    if the input is something none string it wont count that
+    """
     upper = 0
     lower = 0
 
