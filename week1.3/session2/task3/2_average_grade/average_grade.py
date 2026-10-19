@@ -1,11 +1,22 @@
 # Week 1.3, Session 2: Calculate Average Grade and Write to a File
 import csv
+report = []
 
-with open("/workspaces/Comp1850-semester-1/week1.3/session2/task2/student_data.csv", "r") as infile:
+with open("/workspaces/Comp1850-semester-1/week1.3/session2/task3/2_averag_grade/student_data.csv", "r") as infile:
     reader = csv.reader(infile)
+    header = next(reader)
     
     for row in reader:
-        print(row)
+        name_of_student = int(row[1])
+        maths = int(row[2])
+        science = int(row[3])
+        history = int(row[4])
+        average = (maths + science + history)/3
+        
+with open("/workspaces/Comp1850-semester-1/week1.3/session2/task3/2_averag_grade/report.txt", "w") as outfile:
+    writer = csv.writer(outfile)
+    writer.writerow([f"{name} = {average}"])
+    
     
 # Open 'student_data.csv' to read each student's grades
 # hint: skip the header row with data[1:]

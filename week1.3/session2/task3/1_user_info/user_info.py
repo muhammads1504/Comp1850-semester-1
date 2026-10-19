@@ -3,7 +3,7 @@ name = input("Enter your name: ")
 age = input("Enter your age: ")
 favorite_colour = input("Enter your favorite colour: ")
 
-with open('user_info.txt', 'w') as file:
+with open("/workspaces/Comp1850-semester-1/week1.3/session2/task3/1_user_info/user_info.txt", "w") as file:
     file.write(f"Name: {name}\n")
     file.write(f"Age: {age}\n")
     file.write(f"Favorite Colour: {favorite_colour}\n")

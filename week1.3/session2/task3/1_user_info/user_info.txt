@@ -1,0 +1,3 @@
+Name: ahmed
+Age: 18
+Favorite Colour: black
