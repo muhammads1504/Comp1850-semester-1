@@ -4,7 +4,6 @@ L = int(input("Length of sequence: ")) # this should be your only input
 
 sequence = [0]
 visited = {0}
-k = 1
 for k in range(1,L):
     prev = sequence[-1]
     ans = prev - k
