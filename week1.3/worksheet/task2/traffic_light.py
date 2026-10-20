@@ -10,7 +10,8 @@ systime = 0
 maxtime = int(input()) # read an integer number of steps (>0)
 
 state = "red"
-for time in range(systime, maxtime):
+
+for time in range(systime, maxtime + 1):
     rotation = time % 15  # will look at the remainders from the calculation
     if rotation <4:
         state = "red"
