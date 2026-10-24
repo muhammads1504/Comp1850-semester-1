@@ -30,8 +30,13 @@ names = ['Jesy', 'Leigh-Anne', 'Perrie', 'Leigh-Anne', 'Jade',
          'Leigh-Anne', 'Jade', 'Jesy', 'Jade', 'Perrie', 'Jade',
          'Jade', 'Jesy', 'Perrie', 'Perrie', 'Jade', 'Leigh-Anne',
          'Jesy', 'Jesy', 'Perrie', 'Jesy']
-
-
+for x in fruit:
+    most_frequent = max(fruit)
+    print(most_frequent)
+    
+for y in names:
+    most_frequent_name = max(names)
+    print(most_frequent_name)
 # Check if correct output is produced
 print(most_frequent_string(fruit))          # ('date', 4)
 print(most_frequent_string(names))     # ('Leigh-Anne', 10)

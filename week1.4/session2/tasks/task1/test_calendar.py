@@ -17,8 +17,10 @@ print(calendar.month(2025, 10))
 # namely the w and l parameters. Write code to made two more function calls
 # to the month function with different values of w and l and observe the
 # output.
-
-
+print(calendar.monthcalendar(2025, 10))
+weeks = (calendar.monthdays2calendar (2025, 10))
+for week in weeks:
+    print(week)
 # While at https://docs.python.org/3/library/calendar.html, explore
 # the calendar function(calendar.calendar, yes the function is called
 # calendar). The calendar function returns a 3-column calendar for an entire
