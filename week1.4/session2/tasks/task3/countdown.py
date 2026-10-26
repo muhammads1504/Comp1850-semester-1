@@ -17,8 +17,14 @@ def countdown(n):
 
     # Complete your code here
     # base case
+    if n<0:
+        print("None")
+    else:
+        for x in range(n,-1,-1):  # we use the -1 as our lower boundray as it will count to 0 by doing that
+            print(x)
 
     # recursive case
+    
 
 
 # check if correct output is produced
