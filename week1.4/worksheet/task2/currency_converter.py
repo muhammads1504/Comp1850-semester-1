@@ -6,7 +6,7 @@
     other than any provided template code, was written and developed by
     you independently.
 
-    Name:
+    Name: Muhammad Ahmed Kousar
 """
 
 def currency_converter(amount, from_currency, to_currency):
@@ -32,11 +32,7 @@ def currency_converter(amount, from_currency, to_currency):
     return round(amount*rate, 2)
      
      
-amount = float(input("Enter the amount you want to convert: "))
-from_currency = (input("Enter your from curency(GBP,CNY,PHP, or INR) : "))
-to_currency = input("enter your to currency(GBP,CNY,PHP, or INR) : ")
-your_amount = currency_converter(amount,from_currency , to_currency)
-print(f"your converted amount is {your_amount:.2f}")
+
 # Submit only this file currency_converter.py with the completed function.
 
 # Remove any additional code you may have added during development and testing.
