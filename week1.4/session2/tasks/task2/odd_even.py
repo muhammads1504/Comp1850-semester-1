@@ -6,6 +6,11 @@
 
 
 def odd_even(lstIntegers):
+    for num in lstIntegers:
+        if num % 2 == 0:
+            print(f"{num} is even")
+        else:
+            print(f"{num} is odd")
     """
     This function takes a list of integers and returns the number of
     odd numbers and the number of even numbers in a list.

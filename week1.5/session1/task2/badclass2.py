@@ -1,7 +1,7 @@
 # Another bad class implementation
 
-# What does the runtime error mean?
-# How do we fix the code?
+# What does the runtime error mean? the define self is not being using so the programme cisnt reaing the attribute x as it is not defined where thats x and y are coming from
+# How do we fix the code? make sure you are using what you have defined
 
 class Point:
     """
@@ -12,8 +12,8 @@ class Point:
         """
         Creates a Point, given x & y coordinates.
         """
-        x = x_coordinate
-        y = y_coordinate
+        self.x = x_coordinate
+        self.y= y_coordinate
 
 
 p = Point(1.5, 2.0)

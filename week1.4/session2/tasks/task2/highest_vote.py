@@ -1,5 +1,4 @@
 # Week 4, Session 2: Task 2
-
 def most_frequent_string(votes):
     """
     This function identifies the string that appears most frequently
@@ -20,8 +19,6 @@ def most_frequent_string(votes):
     # Your task is to complete the body of the function based on the details in the docstring.
     # Hint 1: You can complete this task with for loops or comprehensions 
     # Hint 2: Think about the properties of the various collection-types
-
-
 fruit = ['date', 'apple', 'cherry', 'date', 'apple', 'apple', 'elderberry',
          'date', 'elderberry', 'elderberry', 'date', 'banana']
 names = ['Jesy', 'Leigh-Anne', 'Perrie', 'Leigh-Anne', 'Jade',
@@ -30,16 +27,22 @@ names = ['Jesy', 'Leigh-Anne', 'Perrie', 'Leigh-Anne', 'Jade',
          'Leigh-Anne', 'Jade', 'Jesy', 'Jade', 'Perrie', 'Jade',
          'Jade', 'Jesy', 'Perrie', 'Perrie', 'Jade', 'Leigh-Anne',
          'Jesy', 'Jesy', 'Perrie', 'Jesy']
-for x in fruit:
-    most_frequent = max(fruit)
-    print(most_frequent)
-    
-for y in names:
-    most_frequent_name = max(names)
-    print(most_frequent_name)
+
+def most_frequent_string_in_fruit(fruit):
+    most_frequent = max(set(fruit), key=fruit.count)
+    frequent_count = fruit.count(most_frequent)
+    return most_frequent, frequent_count
+
+def most_frequent_string_in_names(names):
+    most_frequent = max(set(names), key=names.count)
+    frequent_count = names.count(most_frequent)
+    return most_frequent, frequent_count
+
+
+
 # Check if correct output is produced
-print(most_frequent_string(fruit))          # ('date', 4)
-print(most_frequent_string(names))     # ('Leigh-Anne', 10)
+print(most_frequent_string_in_fruit(fruit))          # ('date', 4)
+print(most_frequent_string_in_names(names))     # ('Leigh-Anne', 10)
 print(most_frequent_string([]))             # (None, None)
 
 # If completed, you could update the function to return all items that tie for the
