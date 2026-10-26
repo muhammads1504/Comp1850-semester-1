@@ -19,9 +19,22 @@ def currency_converter(amount, from_currency, to_currency):
     }
 
     # your code here
+    from_currency = from_currency.upper()
+    to_currency = to_currency.upper()
+    # first define what calculation need to be done and where the parts of the calc are coming from
+    # we also need to check if the currency thats the user is entering is even present in the list
+    if from_currency in conversion_rate and to_currency in conversion_rate:
+        rate = conversion_rate[from_currency][to_currency]
 
-    return None
-
+    return amount*rate
+amount = float(input("Enter the amount you want to convert: "))
+if amount<=0:
+    print("0.0")
+else:
+    from_currency = (input("Enter your from curency(GBP,CNY,PHP, or INR) : "))
+    to_currency = input("enter your to currency(GBP,CNY,PHP, or INR) : ")
+    your_amount = currency_converter(amount,from_currency , to_currency)
+print(f"your converted amount is {your_amount:.2f}")
 # Submit only this file currency_converter.py with the completed function.
 
 # Remove any additional code you may have added during development and testing.

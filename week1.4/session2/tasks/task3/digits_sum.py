@@ -19,6 +19,10 @@ def digits_sum(number):
     """
     # complete your code here
     # base case
+    for x in number:
+        digits_sum = x+x
+
+        return digits_sum
 
     # recursive case
 
