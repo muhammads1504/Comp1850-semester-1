@@ -27,7 +27,7 @@ names = ['Jesy', 'Leigh-Anne', 'Perrie', 'Leigh-Anne', 'Jade',
          'Leigh-Anne', 'Jade', 'Jesy', 'Jade', 'Perrie', 'Jade',
          'Jade', 'Jesy', 'Perrie', 'Perrie', 'Jade', 'Leigh-Anne',
          'Jesy', 'Jesy', 'Perrie', 'Jesy']
-
+#hfg
 def most_frequent_string_in_fruit(fruit):
     most_frequent = max(set(fruit), key=fruit.count)
     frequent_count = fruit.count(most_frequent)
