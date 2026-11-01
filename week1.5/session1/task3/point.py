@@ -16,8 +16,7 @@ class Point:
         self.y = y
         
     def distance(self, x, y):
-        """
-        will calculate the distance from the origin to the point given
+        """will calculate the distance from the origin to the point given
         """
         self.x = x
         self.y = y
