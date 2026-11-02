@@ -1,3 +1,4 @@
+
 # Week 1.6, Session 1: Task 1
 
 import math
