@@ -23,7 +23,13 @@ class Point:
             
         
         return math.hypot(self.x, self.y)
-    
+    def distance_to(self, other): # the other in this means second point thats being put in to calculate the distance on that
+            """
+            Return the distance from this point to another Point.
+            """
+            dx = other.x - self.x
+            dy = other.y - self.y
+            return math.hypot(dx, dy)
 p = Point(4.5, 7.2)
 print(p.x, p.y)
 print(p.distance())
@@ -34,6 +40,8 @@ print(p.distance())
 
     # Add distance_to() method here
     # (This will need a parameter representing another point)
+
+
 
 
 
