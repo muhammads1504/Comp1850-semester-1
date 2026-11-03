@@ -12,7 +12,7 @@ class Person:
         """
         if not isinstance(name,(str)):
             raise TypeError("the name has to be letters only")
-        if not name.strip()=="":
+        if name.strip() == "":
             raise ValueError("the name section cant be empty ")
         if not isinstance(birth,(date)):
             raise TypeError("date of birth must be a date")
