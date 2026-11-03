@@ -24,9 +24,14 @@ class Person:
         """
         return the initials of the person by doing upperclasses
         """
-        upper_cassed = self.name.title()
-        initials = upper_cassed[0] + upper_cassed.split()[1][0] # this will grab teh first letter and teh first letter after space
-        return initials
+        initial_letters = []
+
+        for character in name:
+            letter = character[0].upper()
+            initial_letters.append(letter)
+
+            result = "".join(initial_letters)
+            return result
     def is_birthday(self):
         """
         returns true is its the person birthday today
