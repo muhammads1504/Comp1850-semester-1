@@ -26,12 +26,13 @@ class Person:
         """
         initial_letters = []
 
-        for character in name:
-            letter = character[0].upper()
+        for part in self.name:
+            letter = part[0].upper()
             initial_letters.append(letter)
 
             result = "".join(initial_letters)
             return result
+
     def is_birthday(self):
         """
         returns true is its the person birthday today
