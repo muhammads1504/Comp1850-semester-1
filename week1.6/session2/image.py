@@ -152,3 +152,4 @@ class Image:
             for value in self.pixels[start:start + self.width]:
                 print(f"{value:4d}", end="", file=imgfile)
             print(file=imgfile)
+ 
