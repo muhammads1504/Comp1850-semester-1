@@ -27,7 +27,11 @@ def test_one_int_list():
 
 def test_multiple_int_list():
     test = [12,13,14]
-    assert process_data(test) == [12+13+14]
+    assert process_data(test) == 39
+    """
+    same thing here. after the equals we write the expected result after adding rathere than writing all the numebr with a plus
+    """
+    
     # complete the implementation for
     # testing a list with multiple integers
 
