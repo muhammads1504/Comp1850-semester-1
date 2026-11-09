@@ -8,21 +8,27 @@
 
 
 from process_data import process_data
-
-
 def test_empty_list():
+    assert process_data([]) is None
+    
     # complete the implementation for
     # testing an empty list
     
     
 def test_one_int_list():
+    test = [11]
+    assert process_data(test) == 11
+    """
+    one thing to remember here is that in test we are putting in something thats will be the output if we put that input
+    """
     # complete the implementation for 
     # testing a list with a single integer
 
 
 def test_multiple_int_list():
+    test = [12,13,14]
+    assert process_data(test) == [12+13+14]
     # complete the implementation for
     # testing a list with multiple integers
 
-    
     
