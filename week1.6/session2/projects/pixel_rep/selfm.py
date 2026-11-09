@@ -12,6 +12,7 @@ class ImageError(Exception):
     """
 
 
+
 class Image:
     """
     A greyscale image.
@@ -33,12 +34,12 @@ class Image:
         return image
 
     @classmethod
-    def read(cls, filename):
+    def read(cls, raw_coins):
         """
         Creates an Image from data in the specified PGM file.
         """
         image = Image()
-        image.read_pgm(filename)
+        image.read_pgm(raw_coins)
         return image
 
     def create_pixels(self, width, height, value=0, maximum=255):
@@ -59,15 +60,15 @@ class Image:
         self.width = width
         self.height = height
         self.max_value = maximum
-        self.pixels = [value] * (width * height)
+        return self.pixels[value]*(width*height)
 
-    def read_pgm(self, filename):
+    def read_pgm(self, raw_coins):
         """
         Reads data from the specified PGM image file into this Image.
 
         Any existing image data will be replaced.
         """
-        with open(filename) as imgfile:
+        with open(raw_coins) as imgfile:
             self._parse_magic_number(imgfile)
             self._parse_dimensions(imgfile)
             self._parse_max_value(imgfile)
@@ -104,8 +105,7 @@ class Image:
         """
         Returns pixel value at the specified row & column coordinates.
         """
-        index = row * self.width + col
-        return self.pixels[index]
+        return self.pixels[row][col]
 
     def set(self, row, col, value):
         """
