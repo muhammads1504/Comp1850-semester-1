@@ -25,3 +25,4 @@ except:
 # Calculate the total amount of money including interest (0.8% of the final annual amount) they will have saved in a year.
 # print this out in the format £X.XX (to two decimal places).
 
+assert 2 + 2 == 5

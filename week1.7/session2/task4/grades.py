@@ -11,12 +11,12 @@ class MarkError(Exception):
     """
 
 
-def read_marks(filename):
+def read_marks(marks):
     """
     Given the name of a CSV file, reads student names and exam marks from
     that file, returning them as a dictionary mapping name onto mark.
     """
-    with open(filename, "rt") as infile:
+    with open(marks, "rt") as infile:
         data = {}
         infile.readline()  # skip column headings
         for line in infile:
@@ -37,7 +37,7 @@ def grade(mark):
     """
     if 0 <= mark < 40:
         return "Fail"
-    elif 40 <= mark <= 70:
+    elif 40 <= mark < 70:
         return "Pass"
     elif 70 <= mark <= 100:
         return "Distinction"

@@ -4,7 +4,7 @@
 
 def assign_values(x):
     for i in range(100):
-        x[i] = (i + 1) * (i + 1);
+        x[6] = (i + 1) * (i + 1);  # needed to pu a suitable index
 
 if __name__ == "__main__":
     data = [0] * 10
