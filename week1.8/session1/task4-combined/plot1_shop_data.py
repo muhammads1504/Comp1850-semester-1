@@ -20,7 +20,7 @@ print(shop_data.head())
 
 shop_data["Total_Price"] = shop_data["Units_Sold"] * shop_data["Unit_Price"]
 
-# Step 3: In order to make our first graph, we want to group everything together by Dat
+# Step 3: In order to make our first graph, we want to group everything together by Date
 
 # we need to group by the Date - this joins all the rows with the same date together
 # .sum() tells Pandas to add together all the values - this means we can easily get the sales/day.
@@ -62,6 +62,9 @@ plt.show()
 # To practice, here are some tasks to use - remember, the original data is named shop_data
 
 # Create a pie chart to show sales per product
-
-
+sales_per_product = shop_data.groupby("Product").sum(numeric_only=True)
+sales_per_product = sales_per_product["Total_Price"]
+sales_per_product.plot(kind="pie", colors= ["#E57A44", "#8AB9B5", "#F5E6E8", "#481620", "#eff542"]) # in we have to tell what kind of graph we want to draw
+# and what colours should be used
+plt.show()
 

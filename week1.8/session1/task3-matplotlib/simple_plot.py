@@ -12,6 +12,13 @@ plt.ylabel('y=x^2')  # annotate
 plt.show()  # display
 
 # Test the example as is on the slides
+import matplotlib.pyplot as plt # import library
+x = [ k for k in range(10) ] # create some data
+y = [ k*k for k in x ]
+plt.plot(x,y) # create a plot
+plt.xlabel('x')
+plt.ylabel('y=x^2') # annotate
+plt.show() # display
 # - Modify the data and the range
 # - Plot in different ways
 # Read matplotlib documentation
